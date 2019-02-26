@@ -38,3 +38,15 @@ def fun2():
 
 fun2()
 fun1()
+
+# ~ 禁止函数修改列表,使用切片，保留未打印的列表
+# ~ function_name(list_name[:])
+
+# ~ 传递任意数量的实参
+
+def make_pizza(*toppings):
+	"""打印所有的配料"""
+	print(toppings)
+
+make_pizza('pepperoni')
+make_pizza('mushrooms','green peppers')
