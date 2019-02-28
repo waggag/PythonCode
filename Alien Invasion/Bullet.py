@@ -7,7 +7,7 @@ class Bullet(Sprite):
 
     def __init__(self, ai_settings, screen, ship):
         """在飞船所在位置建立一个子弹对象"""
-        super.__init__()
+        super(Bullet, self).__init__()
         self.screen = screen
 
         # 创建一个表示子弹的矩形,在设置到正确的位置
@@ -17,7 +17,7 @@ class Bullet(Sprite):
         self.rect.top = ship.ship_rect.top
 
         # 存储用小数表示的子弹位置
-        self.y = float(self.ship_rect.y)
+        self.y = float(self.rect.y)
 
         self.color = ai_settings.bullet_color
         self.speed_factor = ai_settings.bullet_speed_factor
