@@ -5,7 +5,6 @@ from settings import Settings
 from ship import Ship
 import game_functions as gf
 
-
 def run_game():
     # 初始化游戏并创建一个屏幕对象
     pygame.init()
@@ -23,10 +22,10 @@ def run_game():
     # 开始游戏的主循环
     while True:
         # 监视键盘和鼠标事件
-        gf.check_events(ship)
+        gf.check_events(ship, bullets)
         ship.upadte()
         bullets.update()
-        gf.update_screen(ai_settings, screen, ship)
+        gf.update_screen(ai_settings, screen, ship, bullets)
 
 
 run_game()
