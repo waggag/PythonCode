@@ -14,7 +14,7 @@ print(favorite_language.rstrip())
 
 # 经常使用str()
 age = 23
-message = "Happy "+str(age)+"rd Birthday!"
+message = "Happy "+ str(age) + "rd Birthday!"
 print(message)
 
 print(3/2)

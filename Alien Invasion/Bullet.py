@@ -22,7 +22,7 @@ class Bullet(Sprite):
 		self.color = ai_settings.bullet_color
 		self.speed_factor = ai_settings.bullet_speed_factor
 
-	def update(self, *args):
+	def update(self):
 		"""向上移动子弹"""
 		# 更新表示子弹位置的小数值
 		self.y -= self.speed_factor
